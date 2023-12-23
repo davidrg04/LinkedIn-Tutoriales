@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro con ventana Modal</title>
+    <meta name="author" content="David Rodríguez Gallego"/>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="form__title">Registrese Ahora</h1>
+            <p class="form__description">Bienvenido!! Porfavor, complete con sus datos</p>
+            <form action="">
+                <label for="email" class="form-control__label">Correo Electrónico</label>
+                <input type="email" id="email" class="form-control">
+                <label for="pass" class="form-control__label">Contraseña</label>
+                <input type="password" id="pass" class="form-control">
+                <label for="pass" class="form-control__label">Confirmar Contraseña</label>
+                <input type="password" id="pass" class="form-control">
+                <input type="submit" class="form__submit" id="submit" value="REGISTRARSE"></input>
+                <p class="form__footer">
+                    ¿Ya tienes una cuenta?<br> <a href="#" id="iniciarSesion">Iniciar sesión</a>
+                </p>
+            </form>
+            
+        </section>
+    </main>
+
+    <div class="modal">
+        <div class="modal_container">
+            <svg id="cerrarModal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 24 24">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+            <h1 class="form_title">Inicie Sesión</h1>
+            <label for="modal-email" class="form-control__label">Correo</label>
+            <input type="email" class="form-control" id="modal-email">
+            <label for="modal-pass" class="form-control__label">Contraseña</label>
+            <input type="email" class="form-control" id="modal-pass">
+            <input type="submit" class="form__submit" value="ENTRAR">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
